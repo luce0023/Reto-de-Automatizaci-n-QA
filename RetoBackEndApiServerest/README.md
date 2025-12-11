@@ -1,4 +1,3 @@
-## 📌 Estructura recomendada para tu README.md
 
 ```markdown
 # Reto Backend - Automatización con Karate DSL
@@ -55,3 +54,4 @@ src/test/resources/features/users/
 - **Validación flexible**: `#string`, `#number`, `match each` para validar tipos.
 - **Separación de features**: cada endpoint en su propio archivo `.feature`.
 ```
+
