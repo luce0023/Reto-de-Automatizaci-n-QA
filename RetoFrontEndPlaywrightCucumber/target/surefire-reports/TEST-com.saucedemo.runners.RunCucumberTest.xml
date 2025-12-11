@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.saucedemo.runners.RunCucumberTest" time="19.778" tests="4" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="23"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\cliente\Documents\AutomatizacionRetos\RetoFrontEndPlaywrightCucumber\target\test-classes;C:\Users\cliente\Documents\AutomatizacionRetos\RetoFrontEndPlaywrightCucumber\target\classes;C:\Users\cliente\.m2\repository\com\microsoft\playwright\playwright\1.40.0\playwright-1.40.0.jar;C:\Users\cliente\.m2\repository\com\google\code\gson\gson\2.8.9\gson-2.8.9.jar;C:\Users\cliente\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\cliente\.m2\repository\com\microsoft\playwright\driver\1.40.0\driver-1.40.0.jar;C:\Users\cliente\.m2\repository\com\microsoft\playwright\driver-bundle\1.40.0\driver-bundle-1.40.0.jar;C:\Users\cliente\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.1\junit-jupiter-api-5.10.1.jar;C:\Users\cliente\.m2\repository\org\junit\platform\junit-platform-commons\1.10.1\junit-platform-commons-1.10.1.jar;C:\Users\cliente\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\cliente\.m2\repository\io\cucumber\cucumber-java\7.15.0\cucumber-java-7.15.0.jar;C:\Users\cliente\.m2\repository\io\cucumber\cucumber-core\7.15.0\cucumber-core-7.15.0.jar;C:\Users\cliente\.m2\repository\io\cucumber\cucumber-gherkin\7.15.0\cucumber-gherkin-7.15.0.jar;C:\Users\cliente\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.15.0\cucumber-gherkin-messages-7.15.0.jar;C:\Users\cliente\.m2\repository\io\cucumber\gherkin\26.2.0\gherkin-26.2.0.jar;C:\Users\cliente\.m2\repository\io\cucumber\messages\22.0.0\messages-22.0.0.jar;C:\Users\cliente\.m2\repository\io\cucumber\tag-expressions\6.0.0\tag-expressions-6.0.0.jar;C:\Users\cliente\.m2\repository\io\cucumber\cucumber-expressions\17.0.1\cucumber-expressions-17.0.1.jar;C:\Users\cliente\.m2\repository\io\cucumber\datatable\7.15.0\datatable-7.15.0.jar;C:\Users\cliente\.m2\repository\io\cucumber\cucumber-plugin\7.15.0\cucumber-plugin-7.15.0.jar;C:\Users\cliente\.m2\repository\io\cucumber\docstring\7.15.0\docstring-7.15.0.jar;C:\Users\cliente\.m2\repository\io\cucumber\html-formatter\20.4.0\html-formatter-20.4.0.jar;C:\Users\cliente\.m2\repository\io\cucumber\junit-xml-formatter\0.2.0\junit-xml-formatter-0.2.0.jar;C:\Users\cliente\.m2\repository\io\cucumber\ci-environment\10.0.0\ci-environment-10.0.0.jar;C:\Users\cliente\.m2\repository\io\cucumber\cucumber-junit-platform-engine\7.15.0\cucumber-junit-platform-engine-7.15.0.jar;C:\Users\cliente\.m2\repository\org\junit\platform\junit-platform-engine\1.10.1\junit-platform-engine-1.10.1.jar;C:\Users\cliente\.m2\repository\io\cucumber\cucumber-picocontainer\7.15.0\cucumber-picocontainer-7.15.0.jar;C:\Users\cliente\.m2\repository\org\picocontainer\picocontainer\2.15\picocontainer-2.15.jar;C:\Users\cliente\.m2\repository\org\junit\platform\junit-platform-suite\1.10.1\junit-platform-suite-1.10.1.jar;C:\Users\cliente\.m2\repository\org\junit\platform\junit-platform-suite-api\1.10.1\junit-platform-suite-api-1.10.1.jar;C:\Users\cliente\.m2\repository\org\junit\platform\junit-platform-suite-engine\1.10.1\junit-platform-suite-engine-1.10.1.jar;C:\Users\cliente\.m2\repository\org\junit\platform\junit-platform-suite-commons\1.10.1\junit-platform-suite-commons-1.10.1.jar;C:\Users\cliente\.m2\repository\org\junit\platform\junit-platform-launcher\1.10.1\junit-platform-launcher-1.10.1.jar;C:\Users\cliente\.m2\repository\org\projectlombok\lombok\1.18.30\lombok-1.18.30.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="America/Lima"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="23"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="PE"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-23\bin"/>
+    <property name="sun.java.command" value="C:\Users\cliente\AppData\Local\Temp\surefire1910280230719143789\surefirebooter-20251210221418781_3.jar C:\Users\cliente\AppData\Local\Temp\surefire1910280230719143789 2025-12-10T22-14-18_695-jvmRun1 surefire-20251210221418781_1tmp surefire_0-20251210221418781_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\cliente\Documents\AutomatizacionRetos\RetoFrontEndPlaywrightCucumber\target\test-classes;C:\Users\cliente\Documents\AutomatizacionRetos\RetoFrontEndPlaywrightCucumber\target\classes;C:\Users\cliente\.m2\repository\com\microsoft\playwright\playwright\1.40.0\playwright-1.40.0.jar;C:\Users\cliente\.m2\repository\com\google\code\gson\gson\2.8.9\gson-2.8.9.jar;C:\Users\cliente\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\cliente\.m2\repository\com\microsoft\playwright\driver\1.40.0\driver-1.40.0.jar;C:\Users\cliente\.m2\repository\com\microsoft\playwright\driver-bundle\1.40.0\driver-bundle-1.40.0.jar;C:\Users\cliente\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.1\junit-jupiter-api-5.10.1.jar;C:\Users\cliente\.m2\repository\org\junit\platform\junit-platform-commons\1.10.1\junit-platform-commons-1.10.1.jar;C:\Users\cliente\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\cliente\.m2\repository\io\cucumber\cucumber-java\7.15.0\cucumber-java-7.15.0.jar;C:\Users\cliente\.m2\repository\io\cucumber\cucumber-core\7.15.0\cucumber-core-7.15.0.jar;C:\Users\cliente\.m2\repository\io\cucumber\cucumber-gherkin\7.15.0\cucumber-gherkin-7.15.0.jar;C:\Users\cliente\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.15.0\cucumber-gherkin-messages-7.15.0.jar;C:\Users\cliente\.m2\repository\io\cucumber\gherkin\26.2.0\gherkin-26.2.0.jar;C:\Users\cliente\.m2\repository\io\cucumber\messages\22.0.0\messages-22.0.0.jar;C:\Users\cliente\.m2\repository\io\cucumber\tag-expressions\6.0.0\tag-expressions-6.0.0.jar;C:\Users\cliente\.m2\repository\io\cucumber\cucumber-expressions\17.0.1\cucumber-expressions-17.0.1.jar;C:\Users\cliente\.m2\repository\io\cucumber\datatable\7.15.0\datatable-7.15.0.jar;C:\Users\cliente\.m2\repository\io\cucumber\cucumber-plugin\7.15.0\cucumber-plugin-7.15.0.jar;C:\Users\cliente\.m2\repository\io\cucumber\docstring\7.15.0\docstring-7.15.0.jar;C:\Users\cliente\.m2\repository\io\cucumber\html-formatter\20.4.0\html-formatter-20.4.0.jar;C:\Users\cliente\.m2\repository\io\cucumber\junit-xml-formatter\0.2.0\junit-xml-formatter-0.2.0.jar;C:\Users\cliente\.m2\repository\io\cucumber\ci-environment\10.0.0\ci-environment-10.0.0.jar;C:\Users\cliente\.m2\repository\io\cucumber\cucumber-junit-platform-engine\7.15.0\cucumber-junit-platform-engine-7.15.0.jar;C:\Users\cliente\.m2\repository\org\junit\platform\junit-platform-engine\1.10.1\junit-platform-engine-1.10.1.jar;C:\Users\cliente\.m2\repository\io\cucumber\cucumber-picocontainer\7.15.0\cucumber-picocontainer-7.15.0.jar;C:\Users\cliente\.m2\repository\org\picocontainer\picocontainer\2.15\picocontainer-2.15.jar;C:\Users\cliente\.m2\repository\org\junit\platform\junit-platform-suite\1.10.1\junit-platform-suite-1.10.1.jar;C:\Users\cliente\.m2\repository\org\junit\platform\junit-platform-suite-api\1.10.1\junit-platform-suite-api-1.10.1.jar;C:\Users\cliente\.m2\repository\org\junit\platform\junit-platform-suite-engine\1.10.1\junit-platform-suite-engine-1.10.1.jar;C:\Users\cliente\.m2\repository\org\junit\platform\junit-platform-suite-commons\1.10.1\junit-platform-suite-commons-1.10.1.jar;C:\Users\cliente\.m2\repository\org\junit\platform\junit-platform-launcher\1.10.1\junit-platform-launcher-1.10.1.jar;C:\Users\cliente\.m2\repository\org\projectlombok\lombok\1.18.30\lombok-1.18.30.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\cliente"/>
+    <property name="user.language" value="es"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-01-21"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-23"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\cliente\Documents\AutomatizacionRetos\RetoFrontEndPlaywrightCucumber"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\cliente\AppData\Local\Temp\surefire1910280230719143789\surefirebooter-20251210221418781_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="23.0.2+7-58"/>
+    <property name="user.name" value="cliente"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\cliente\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\cliente\AppData\Local\Temp\"/>
+    <property name="java.version" value="23.0.2"/>
+    <property name="user.dir" value="C:\Users\cliente\Documents\AutomatizacionRetos\RetoFrontEndPlaywrightCucumber"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-23\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\PowerShell\7;c:\Users\cliente\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;c:\Users\cliente\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\copilotCli;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\platform-tools;C:\Program Files\nodejs\;C:\Users\cliente\Documents\maven\apache-maven-3.9.9-bin\apache-maven-3.9.9\bin;C:\Program Files\Java\jdk-23\bin;;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA App\NvDLISR;C:\Program Files\PowerShell\7\;C:\Users\cliente\AppData\Local\Programs\Python\Python313\Scripts\;C:\Users\cliente\AppData\Local\Programs\Python\Python313\;C:\Users\cliente\AppData\Local\Microsoft\WindowsApps;C:\Users\cliente\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\cliente\AppData\Roaming\npm;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2024.3.2.2\bin;;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="23.0.2+7-58"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="67.0"/>
+  </properties>
+  <testcase name="1. Iniciar sesión con credenciales válidas" classname="Autenticación de Usuarios en Sauce Demo" time="15.824">
+    <system-out><![CDATA[
+@SelectClasspathResource("features") @LoginValido
+Scenario: 1. Iniciar sesión con credenciales válidas                           &amp#27;[90m# features/Login.feature:13&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mque el usuario está en la página de login &amp#27;[0m&amp#27;[32m&amp#27;[1m"https://www.saucedemo.com/"&amp#27;[0m &amp#27;[90m# com.saucedemo.steps.LoginSteps.que_el_usuario_esta_en_la_pagina_de_login(java.lang.String)&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mun usuario con credenciales &amp#27;[0m&amp#27;[32m&amp#27;[1m"standard_user"&amp#27;[0m&amp#27;[32m y &amp#27;[0m&amp#27;[32m&amp#27;[1m"secret_sauce"&amp#27;[0m           &amp#27;[90m# com.saucedemo.steps.LoginSteps.un_usuario_con_credenciales(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mel usuario intenta iniciar sesión&amp#27;[0m                                       &amp#27;[90m# com.saucedemo.steps.LoginSteps.el_usuario_intenta_iniciar_sesion()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mel inicio de sesión debe ser exitoso&amp#27;[0m                                    &amp#27;[90m# com.saucedemo.steps.LoginSteps.el_inicio_de_sesion_debe_ser_exitoso()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mel usuario es redirigido a la página de productos&amp#27;[0m                        &amp#27;[90m# com.saucedemo.steps.LoginSteps.el_usuario_es_redirigido_a_la_pagina_de_productos()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mel botón de menú es visible&amp#27;[0m                                              &amp#27;[90m# com.saucedemo.steps.LoginSteps.el_boton_de_menu_es_visible()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="2. No se permite iniciar sesión con credenciales inválidas" classname="Autenticación de Usuarios en Sauce Demo" time="1.119">
+    <system-out><![CDATA[
+@SelectClasspathResource("features") @LoginInvalido
+Scenario: 2. No se permite iniciar sesión con credenciales inválidas                                             &amp#27;[90m# features/Login.feature:21&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mque el usuario está en la página de login &amp#27;[0m&amp#27;[32m&amp#27;[1m"https://www.saucedemo.com/"&amp#27;[0m                                   &amp#27;[90m# com.saucedemo.steps.LoginSteps.que_el_usuario_esta_en_la_pagina_de_login(java.lang.String)&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mun usuario con credenciales &amp#27;[0m&amp#27;[32m&amp#27;[1m"usuario_invalido"&amp#27;[0m&amp#27;[32m y &amp#27;[0m&amp#27;[32m&amp#27;[1m"password_invalida"&amp#27;[0m                                     &amp#27;[90m# com.saucedemo.steps.LoginSteps.un_usuario_con_credenciales(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mel usuario intenta iniciar sesión&amp#27;[0m                                                                         &amp#27;[90m# com.saucedemo.steps.LoginSteps.el_usuario_intenta_iniciar_sesion()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mel inicio de sesión debe fallar&amp#27;[0m                                                                           &amp#27;[90m# com.saucedemo.steps.LoginSteps.el_inicio_de_sesion_debe_fallar()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mse muestra el mensaje de error &amp#27;[0m&amp#27;[32m&amp#27;[1m"Epic sadface: Username and password do not match any user in this service"&amp#27;[0m &amp#27;[90m# com.saucedemo.steps.LoginSteps.se_muestra_el_mensaje_de_error(java.lang.String)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="3. No se permite iniciar sesión con un usuario bloqueado" classname="Autenticación de Usuarios en Sauce Demo" time="1.178">
+    <system-out><![CDATA[
+@SelectClasspathResource("features") @LoginBloqueado
+Scenario: 3. No se permite iniciar sesión con un usuario bloqueado                         &amp#27;[90m# features/Login.feature:28&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mque el usuario está en la página de login &amp#27;[0m&amp#27;[32m&amp#27;[1m"https://www.saucedemo.com/"&amp#27;[0m             &amp#27;[90m# com.saucedemo.steps.LoginSteps.que_el_usuario_esta_en_la_pagina_de_login(java.lang.String)&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mun usuario con credenciales &amp#27;[0m&amp#27;[32m&amp#27;[1m"locked_out_user"&amp#27;[0m&amp#27;[32m y &amp#27;[0m&amp#27;[32m&amp#27;[1m"secret_sauce"&amp#27;[0m                     &amp#27;[90m# com.saucedemo.steps.LoginSteps.un_usuario_con_credenciales(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mel usuario intenta iniciar sesión&amp#27;[0m                                                   &amp#27;[90m# com.saucedemo.steps.LoginSteps.el_usuario_intenta_iniciar_sesion()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mel inicio de sesión debe fallar&amp#27;[0m                                                     &amp#27;[90m# com.saucedemo.steps.LoginSteps.el_inicio_de_sesion_debe_fallar()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mse muestra el mensaje de error &amp#27;[0m&amp#27;[32m&amp#27;[1m"Epic sadface: Sorry, this user has been locked out."&amp#27;[0m &amp#27;[90m# com.saucedemo.steps.LoginSteps.se_muestra_el_mensaje_de_error(java.lang.String)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="4. El usuario completa el flujo de compra" classname="Autenticación de Usuarios en Sauce Demo" time="1.419">
+    <system-out><![CDATA[
+@SelectClasspathResource("features") @FlujoCompleto
+Scenario: 4. El usuario completa el flujo de compra                            &amp#27;[90m# features/Login.feature:35&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mque el usuario está en la página de login &amp#27;[0m&amp#27;[32m&amp#27;[1m"https://www.saucedemo.com/"&amp#27;[0m &amp#27;[90m# com.saucedemo.steps.LoginSteps.que_el_usuario_esta_en_la_pagina_de_login(java.lang.String)&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mque el usuario está en la página de login &amp#27;[0m&amp#27;[32m&amp#27;[1m"https://www.saucedemo.com/"&amp#27;[0m &amp#27;[90m# com.saucedemo.steps.LoginSteps.que_el_usuario_esta_en_la_pagina_de_login(java.lang.String)&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mun usuario con credenciales &amp#27;[0m&amp#27;[32m&amp#27;[1m"standard_user"&amp#27;[0m&amp#27;[32m y &amp#27;[0m&amp#27;[32m&amp#27;[1m"secret_sauce"&amp#27;[0m           &amp#27;[90m# com.saucedemo.steps.LoginSteps.un_usuario_con_credenciales(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mel usuario intenta iniciar sesión&amp#27;[0m                                       &amp#27;[90m# com.saucedemo.steps.LoginSteps.el_usuario_intenta_iniciar_sesion()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mel inicio de sesión debe ser exitoso&amp#27;[0m                                    &amp#27;[90m# com.saucedemo.steps.LoginSteps.el_inicio_de_sesion_debe_ser_exitoso()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mel usuario agrega un producto al carrito&amp#27;[0m                                &amp#27;[90m# com.saucedemo.steps.ProductSteps.el_usuario_agrega_un_producto_al_carrito()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mnavega al carrito de compras&amp#27;[0m                                             &amp#27;[90m# com.saucedemo.steps.ProductSteps.navega_al_carrito_de_compras()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mel producto es visible en el carrito&amp#27;[0m                                    &amp#27;[90m# com.saucedemo.steps.ProductSteps.el_producto_es_visible_en_el_carrito()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mel usuario inicia el proceso de compra&amp#27;[0m                                  &amp#27;[90m# com.saucedemo.steps.ProductSteps.el_usuario_inicia_el_proceso_de_compra()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mingresa los detalles de compra &amp#27;[0m&amp#27;[32m&amp#27;[1m"Tester"&amp#27;[0m&amp#27;[32m, &amp#27;[0m&amp#27;[32m&amp#27;[1m"Sauce"&amp#27;[0m&amp#27;[32m y &amp#27;[0m&amp#27;[32m&amp#27;[1m"12345"&amp#27;[0m              &amp#27;[90m# com.saucedemo.steps.ProductSteps.ingresa_los_detalles_de_compra(java.lang.String,java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mconfirma la compra&amp#27;[0m                                                      &amp#27;[90m# com.saucedemo.steps.ProductSteps.confirma_la_compra()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mla compra es confirmada con el mensaje &amp#27;[0m&amp#27;[32m&amp#27;[1m"Thank you for your order!"&amp#27;[0m      &amp#27;[90m# com.saucedemo.steps.ProductSteps.la_compra_es_confirmada(java.lang.String)&amp#27;[0m
+]]></system-out>
+  </testcase>
+</testsuite>

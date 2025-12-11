@@ -1,0 +1,1526 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"c48480d5-7146-44c2-bf80-e39429e4062c",karate_version:"1.4.0",karate_meta:null});
+  }
+});
+</script>
+
+    <title>features.users.GetUsers</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">2</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2025-12-11 11:57:45 a. m.</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:9]"><span>[1:9]</span> <span>Listar usuarios devuelve 200 y esquema válido</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:15]"><span>[2:15]</span> <span>Consultar usuario con ID inválido devuelve 400</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">features/users/GetUsers.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">GET /usuarios - Listar usuarios</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:9]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:9]</span>
+                <span class="scenario-name">Listar usuarios devuelve 200 y esquema válido</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>876</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:9]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:9]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://serverest.dev&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">32</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:9]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def usersPath = &#39;/usuarios&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:9]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>headers { &#39;Content-Type&#39;: &#39;application/json&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">20</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:9]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def Java = Java.type(&#39;com.serverest.helpers.DataGenerator&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">20</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path usersPath</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">760</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.11">11:57:44.073 request:
+1 &gt; GET https://serverest.dev/usuarios
+1 &gt; Content-Type: application/json
+1 &gt; Host: serverest.dev
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+11:57:44.693 response time in milliseconds: 616
+1 &lt; 200
+1 &lt; access-control-allow-origin: *
+1 &lt; x-dns-prefetch-control: off
+1 &lt; x-frame-options: SAMEORIGIN
+1 &lt; strict-transport-security: max-age=15552000; includeSubDomains
+1 &lt; x-download-options: noopen
+1 &lt; x-content-type-options: nosniff
+1 &lt; x-xss-protection: 1; mode=block
+1 &lt; content-type: application/json; charset=utf-8
+1 &lt; x-cloud-trace-context: 2404ffc29a1e0a3ed39bf363f6877726;o=1
+1 &lt; date: Thu, 11 Dec 2025 16:57:45 GMT
+1 &lt; server: Google Frontend
+1 &lt; Content-Length: 28570
+{
+    &quot;quantidade&quot;: 128,
+    &quot;usuarios&quot;: [
+        {
+            &quot;nome&quot;: &quot;Vale_fea391&quot;,
+            &quot;email&quot;: &quot;qa_4d93aab2@teste.com&quot;,
+            &quot;password&quot;: &quot;1234&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;06nduycnj0navttc&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Fulano da Silva&quot;,
+            &quot;email&quot;: &quot;fulano@qa.com&quot;,
+            &quot;password&quot;: &quot;teste&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;0uxuPY0cbmQhpEz1&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Ari_7ec07c&quot;,
+            &quot;email&quot;: &quot;qa_f1c569bc@teste.com&quot;,
+            &quot;password&quot;: &quot;1234&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;16FwvGnYHHGuvED8&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Lucero_b3fdfb&quot;,
+            &quot;email&quot;: &quot;qa_1d2b4558@teste.com&quot;,
+            &quot;password&quot;: &quot;1234&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;1alihb6uMvTdNXa5&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;user_1765471717422_xnf6xo&quot;,
+            &quot;email&quot;: &quot;1765471717422_y5su@teste.com&quot;,
+            &quot;password&quot;: &quot;senha_1765471717422_vnvolb&quot;,
+            &quot;administrador&quot;: &quot;false&quot;,
+            &quot;_id&quot;: &quot;2429YtcK41zuLPlo&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Alex_e4b8d4&quot;,
+            &quot;email&quot;: &quot;qa_b01e2e3b@teste.com&quot;,
+            &quot;password&quot;: &quot;1234&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;2CH7CJcqBVmxgavU&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Usuário vwhjwb&quot;,
+            &quot;email&quot;: &quot;user_1765465084286@teste.com&quot;,
+            &quot;password&quot;: &quot;Test1234&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;2OkSso6ohbJRbAAX&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Bruce Wayne&quot;,
+            &quot;email&quot;: &quot;test1765471631740@email.com&quot;,
+            &quot;password&quot;: &quot;batmobil123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;2TUF9oNK0prFDMLr&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Lucero_5153ba&quot;,
+            &quot;email&quot;: &quot;qa_2488aa5a@teste.com&quot;,
+            &quot;password&quot;: &quot;1234&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;2enbfMRDQWNQfOKA&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Eduardo Carlos Lemos&quot;,
+            &quot;email&quot;: &quot;eduardo.anemolos@outlook.com&quot;,
+            &quot;password&quot;: &quot;123456&quot;,
+            &quot;administrador&quot;: &quot;false&quot;,
+            &quot;_id&quot;: &quot;35wtyymU4jPH67mu&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Tommie Mann&quot;,
+            &quot;email&quot;: &quot;otto.boehm@yahoo.com&quot;,
+            &quot;password&quot;: &quot;123456&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;3U54uiPdg69XNlQp&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Fulaninho Nascimento&quot;,
+            &quot;email&quot;: &quot;marta@qa.com&quot;,
+            &quot;password&quot;: &quot;teste&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;3mqgbXok1BhrY98Y&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Pedro da Silva&quot;,
+            &quot;email&quot;: &quot;pedro@qa.com.br&quot;,
+            &quot;password&quot;: &quot;teste&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;3pVOMxinQFHnWrAn&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Bruce Wayne&quot;,
+            &quot;email&quot;: &quot;fixed1765471718483@email.com&quot;,
+            &quot;password&quot;: &quot;test&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;47GJw74TBA42vpCe&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Bruce Wayne&quot;,
+            &quot;email&quot;: &quot;test1765470936519@email.com&quot;,
+            &quot;password&quot;: &quot;batmobil123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;4nQncoTJwLk4dNNP&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;user_1765467578600_s7va4c&quot;,
+            &quot;email&quot;: &quot;1765467578600_5syb@teste.com&quot;,
+            &quot;password&quot;: &quot;zrwzlwp6&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;56ion8RwVGNsxRxQ&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Bruce Wayne&quot;,
+            &quot;email&quot;: &quot;fixed1765471640009@email.com&quot;,
+            &quot;password&quot;: &quot;test&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;5SOzSkIMQyygIpEH&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;user_1765466032289_8kqjjo&quot;,
+            &quot;email&quot;: &quot;1765466032289_wmjt@teste.com&quot;,
+            &quot;password&quot;: &quot;senha_1765466032289_pi54ju&quot;,
+            &quot;administrador&quot;: &quot;false&quot;,
+            &quot;_id&quot;: &quot;6DKmpqqPKcpvhFkP&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Bruce Wayne&quot;,
+            &quot;email&quot;: &quot;test1765470965089@email.com&quot;,
+            &quot;password&quot;: &quot;batmobil123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;77vJ225v9kuPR0nf&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Atualizado_#(id)&quot;,
+            &quot;email&quot;: &quot;qa_0e2876cc@teste.com&quot;,
+            &quot;password&quot;: &quot;1234&quot;,
+            &quot;administrador&quot;: &quot;false&quot;,
+            &quot;_id&quot;: &quot;7OKWEJGO345fGygb&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;user_1765471509262_okt3zu&quot;,
+            &quot;email&quot;: &quot;1765471509262_nubu@teste.com&quot;,
+            &quot;password&quot;: &quot;senha_1765471509262_xkuolg&quot;,
+            &quot;administrador&quot;: &quot;false&quot;,
+            &quot;_id&quot;: &quot;7TD47S3g1WZwTlNL&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;user_1765470983042_opjb75&quot;,
+            &quot;email&quot;: &quot;1765470983042_a9k3@teste.com&quot;,
+            &quot;password&quot;: &quot;senha_1765470983042_jszfvg&quot;,
+            &quot;administrador&quot;: &quot;false&quot;,
+            &quot;_id&quot;: &quot;9ZDg6sQNTIA7lmZk&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;user_1765471513625_zoykaz&quot;,
+            &quot;email&quot;: &quot;1765471513625_gmko@teste.com&quot;,
+            &quot;password&quot;: &quot;1sai2zbb&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;AHeFVj0CVHw3pBEV&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Bruce Wayne&quot;,
+            &quot;email&quot;: &quot;fixed1765471872963@email.com&quot;,
+            &quot;password&quot;: &quot;test&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;AkSDblc4zPdNsOQ1&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Bruce Wayne&quot;,
+            &quot;email&quot;: &quot;test1765471882609@email.com&quot;,
+            &quot;password&quot;: &quot;batmobil123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;AmQ9DggyxaITvY4y&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;user_1765470057472_fhvqpk&quot;,
+            &quot;email&quot;: &quot;1765470057472_jl6y@teste.com&quot;,
+            &quot;password&quot;: &quot;wuavm4r0&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;BMjxb9aD8u7rDyVB&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Bruce Wayne&quot;,
+            &quot;email&quot;: &quot;test1765470939662@email.com&quot;,
+            &quot;password&quot;: &quot;batmobil123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;Bnct4ivk7Qph6xYc&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;user_1765470053056_8c022n&quot;,
+            &quot;email&quot;: &quot;1765470053056_86hh@teste.com&quot;,
+            &quot;password&quot;: &quot;senha_1765470053056_jht5d4&quot;,
+            &quot;administrador&quot;: &quot;false&quot;,
+            &quot;_id&quot;: &quot;CGkSisHohzqMnazc&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Bruce Wayne&quot;,
+            &quot;email&quot;: &quot;test1765471883482@email.com&quot;,
+            &quot;password&quot;: &quot;batmobil123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;D7N8yBMnaM8g0HfE&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Bruce Wayne&quot;,
+            &quot;email&quot;: &quot;test1765471442679@email.com&quot;,
+            &quot;password&quot;: &quot;batmobil123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;E8nPhyREn0Y5xqP9&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Dana_009e80&quot;,
+            &quot;email&quot;: &quot;qa_962e8a5e@teste.com&quot;,
+            &quot;password&quot;: &quot;1234&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;ECoklC8YbN9pHSiP&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;api_1765470778726_wv4ie1&quot;,
+            &quot;email&quot;: &quot;1765470778726_pcp4@teste.com&quot;,
+            &quot;password&quot;: &quot;krm667lr&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;FT8slTCJ3FNNQ7lo&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Bruce Wayne&quot;,
+            &quot;email&quot;: &quot;test1765470986965@email.com&quot;,
+            &quot;password&quot;: &quot;batmobil123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;Fk3xLLButiClex88&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;user_1765470780882_1pzkn6&quot;,
+            &quot;email&quot;: &quot;1765470780882_q3d8@teste.com&quot;,
+            &quot;password&quot;: &quot;senha_1765470780882_8cnvss&quot;,
+            &quot;administrador&quot;: &quot;false&quot;,
+            &quot;_id&quot;: &quot;FvsNnsTC45nrR3Dh&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;user_1765466849345_oi27dw&quot;,
+            &quot;email&quot;: &quot;1765466849345_48r7@teste.com&quot;,
+            &quot;password&quot;: &quot;vxw1ai1m&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;G0yrvNZa5HLUTuKw&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;api_1765470980842_1ix08x&quot;,
+            &quot;email&quot;: &quot;1765470980842_uofr@teste.com&quot;,
+            &quot;password&quot;: &quot;old4glgm&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;GH2j1cVlAFzdO7EE&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;user_1765470805315_eyg1je&quot;,
+            &quot;email&quot;: &quot;1765470805315_a0in@teste.com&quot;,
+            &quot;password&quot;: &quot;paupqrze&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;GZEheGCeyroSJi2I&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Bruce Wayne&quot;,
+            &quot;email&quot;: &quot;test1765471602274@email.com&quot;,
+            &quot;password&quot;: &quot;batmobil123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;GcP05L8uFzSN0jAu&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;api_1765471715290_i9urmd&quot;,
+            &quot;email&quot;: &quot;1765471715290_69k5@teste.com&quot;,
+            &quot;password&quot;: &quot;inwjdg4c&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;GjIgMyMac3Ut8yPl&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Bruce Wayne&quot;,
+            &quot;email&quot;: &quot;fixed1765471680355@email.com&quot;,
+            &quot;password&quot;: &quot;test&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;GkuSwy8B940UsCPm&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Bruce Wayne&quot;,
+            &quot;email&quot;: &quot;test1765471637720@email.com&quot;,
+            &quot;password&quot;: &quot;batmobil123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;GrroNbB77ZZBKsdr&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Glynda Crooks&quot;,
+            &quot;email&quot;: &quot;mitch.ziemann@gmail.com&quot;,
+            &quot;password&quot;: &quot;123456&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;IDPcdHry7fjBifst&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Lucero_f9b457&quot;,
+            &quot;email&quot;: &quot;qa_8f021797@teste.com&quot;,
+            &quot;password&quot;: &quot;1234&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;INkGYeTWqpSwDN8C&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Alex_5da685&quot;,
+            &quot;email&quot;: &quot;qa_4b19f531@teste.com&quot;,
+            &quot;password&quot;: &quot;1234&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;Ixqzges4c2gxCobk&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Bruce Wayne&quot;,
+            &quot;email&quot;: &quot;fixed1765471656722@email.com&quot;,
+            &quot;password&quot;: &quot;test&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;J3dr1rbQyQgyN4V2&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Leo_b966bb&quot;,
+            &quot;email&quot;: &quot;qa_9399eba3@teste.com&quot;,
+            &quot;password&quot;: &quot;1234&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;JFM5S2pCJDHbhMkM&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Bruce Wayne&quot;,
+            &quot;email&quot;: &quot;test1765470907797@email.com&quot;,
+            &quot;password&quot;: &quot;batmobil123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;JgCywzagnNUL0LiL&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Lucero_821606&quot;,
+            &quot;email&quot;: &quot;qa_b8242222@teste.com&quot;,
+            &quot;password&quot;: &quot;1234&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;K2ezj7aZNOJUEJ5O&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Bruce Wayne&quot;,
+            &quot;email&quot;: &quot;fixed1765471877489@email.com&quot;,
+            &quot;password&quot;: &quot;test&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;KddM4LPYiqfuHQhD&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;api_1765468198302_ud8zpm&quot;,
+            &quot;email&quot;: &quot;1765468198302_kml9@teste.com&quot;,
+            &quot;password&quot;: &quot;n9zc9ze0&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;KdyhBsYLi05TKeri&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Lucero_f00318&quot;,
+            &quot;email&quot;: &quot;qa_f10e3ee2@teste.com&quot;,
+            &quot;password&quot;: &quot;1234&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;LA8RSXqeVWduCvge&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Alex_1c5639&quot;,
+            &quot;email&quot;: &quot;qa_f12ee07d@teste.com&quot;,
+            &quot;password&quot;: &quot;1234&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;LK3PIWjIkEMfW7kd&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Bruce Wayne&quot;,
+            &quot;email&quot;: &quot;test1765471624350@email.com&quot;,
+            &quot;password&quot;: &quot;batmobil123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;MFCDA3qeH9XgQopU&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Leo_6e3056&quot;,
+            &quot;email&quot;: &quot;qa_03e891d8@teste.com&quot;,
+            &quot;password&quot;: &quot;1234&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;MQNqiKVVaA6w8kwM&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;user_1765465745735_983uhc&quot;,
+            &quot;email&quot;: &quot;1765465745735_rtbx@teste.com&quot;,
+            &quot;password&quot;: &quot;zr9bbg5t&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;OuovasCjIJpnTH5b&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Bruce Wayne&quot;,
+            &quot;email&quot;: &quot;test1765469728015@email.com&quot;,
+            &quot;password&quot;: &quot;batmobil123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;PtBfcAMa0nt2BH5X&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;user_1765470065052_z6y5s9&quot;,
+            &quot;email&quot;: &quot;1765470065052_9pin@teste.com&quot;,
+            &quot;password&quot;: &quot;9o1e4usr&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;QlygFcQMvDGFX8O8&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Novo Usuário&quot;,
+            &quot;email&quot;: &quot;joao1765465079965@teste.com&quot;,
+            &quot;password&quot;: &quot;123456&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;SbY1LUrul10Asegt&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;user_1765466039615_a49tdy&quot;,
+            &quot;email&quot;: &quot;1765466039615_34mo@teste.com&quot;,
+            &quot;password&quot;: &quot;z93ft1pg&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;SoFEk2F3hnhCIW1u&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;user_1765465521055_om8xxr&quot;,
+            &quot;email&quot;: &quot;1765465521055_utca@teste.com&quot;,
+            &quot;password&quot;: &quot;senha_1765465521055_oi0hmu&quot;,
+            &quot;administrador&quot;: &quot;false&quot;,
+            &quot;_id&quot;: &quot;TgLd2lDah7eyybyf&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Bruce Wayne&quot;,
+            &quot;email&quot;: &quot;test1765471680156@email.com&quot;,
+            &quot;password&quot;: &quot;batmobil123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;TtBukZz3vC50VZJz&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;user_1765470785768_zx8us6&quot;,
+            &quot;email&quot;: &quot;1765470785768_614d@teste.com&quot;,
+            &quot;password&quot;: &quot;tyq2020t&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;UWuxO9kmHLvnaJMB&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Bruce Wayne&quot;,
+            &quot;email&quot;: &quot;test1765471702287@email.com&quot;,
+            &quot;password&quot;: &quot;batmobil123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;Uy7dlMyyXN3FqwuU&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Bruce Wayne&quot;,
+            &quot;email&quot;: &quot;test1765471877304@email.com&quot;,
+            &quot;password&quot;: &quot;batmobil123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;VBNglL1JctBqeRTs&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;api_1765467797093_gt5eh4&quot;,
+            &quot;email&quot;: &quot;1765467797093_lyz2@teste.com&quot;,
+            &quot;password&quot;: &quot;123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;VOYNLPK4b9uG2PS7&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Bruce Wayne&quot;,
+            &quot;email&quot;: &quot;test1765471740611@email.com&quot;,
+            &quot;password&quot;: &quot;batmobil123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;VgV9A63gxCKOsPvQ&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Bruce Wayne&quot;,
+            &quot;email&quot;: &quot;test1765471639812@email.com&quot;,
+            &quot;password&quot;: &quot;batmobil123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;VuCYLjYnO9o9uiw4&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Bruce Wayne&quot;,
+            &quot;email&quot;: &quot;fixed1765471742429@email.com&quot;,
+            &quot;password&quot;: &quot;test&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;W1yQctSk3R6DS2Jl&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Bruce Wayne&quot;,
+            &quot;email&quot;: &quot;test1765471561490@email.com&quot;,
+            &quot;password&quot;: &quot;batmobil123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;WEs64pMCly4UNoC5&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;user_1765467047789_igqohi&quot;,
+            &quot;email&quot;: &quot;1765467047789_copq@teste.com&quot;,
+            &quot;password&quot;: &quot;mcq8r1ev&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;WalejV0i1GIPn6HG&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Atualizado_#(id)&quot;,
+            &quot;email&quot;: &quot;qa_36834ab3@teste.com&quot;,
+            &quot;password&quot;: &quot;1234&quot;,
+            &quot;administrador&quot;: &quot;false&quot;,
+            &quot;_id&quot;: &quot;WyXk2xtN3paPpgM7&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Bruce Wayne&quot;,
+            &quot;email&quot;: &quot;test1765470972830@email.com&quot;,
+            &quot;password&quot;: &quot;batmobil123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;XbjNWJTINSgGiTEk&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Lucero_b2e6d3&quot;,
+            &quot;email&quot;: &quot;qa_84e66fb9@teste.com&quot;,
+            &quot;password&quot;: &quot;1234&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;YuuuNyKojauJOdEx&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Bruce Wayne&quot;,
+            &quot;email&quot;: &quot;fixed1765471883863@email.com&quot;,
+            &quot;password&quot;: &quot;test&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;ZePJerQtOoyS1D7G&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Bruce Wayne&quot;,
+            &quot;email&quot;: &quot;test1765469626918@email.com&quot;,
+            &quot;password&quot;: &quot;batmobil123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;bWe39tVhuu2eh7O9&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Bruce Wayne&quot;,
+            &quot;email&quot;: &quot;test1765470490382@email.com&quot;,
+            &quot;password&quot;: &quot;batmobil123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;c8IS2f2ec1EBLCmc&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;user_1765471725776_l6jmmi&quot;,
+            &quot;email&quot;: &quot;1765471725776_x6xp@teste.com&quot;,
+            &quot;password&quot;: &quot;bfz2mmr7&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;cVgkmwKsBzhP7juP&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Lucero_d348dd&quot;,
+            &quot;email&quot;: &quot;qa_7c675bef@teste.com&quot;,
+            &quot;password&quot;: &quot;1234&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;ch7mDAgwmf6znH03&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Bruce Wayne&quot;,
+            &quot;email&quot;: &quot;test1765471556148@email.com&quot;,
+            &quot;password&quot;: &quot;batmobil123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;dWzPsu6PEGx8n3L1&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Atualizado_#(id)&quot;,
+            &quot;email&quot;: &quot;qa_update@teste.com&quot;,
+            &quot;password&quot;: &quot;1234&quot;,
+            &quot;administrador&quot;: &quot;false&quot;,
+            &quot;_id&quot;: &quot;dkd9QwMC4BEcMBFz&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Bruce Wayne&quot;,
+            &quot;email&quot;: &quot;test1765469633865@email.com&quot;,
+            &quot;password&quot;: &quot;batmobil123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;eek4vAumBISx7I3z&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Bruce Wayne&quot;,
+            &quot;email&quot;: &quot;fixed1765471654734@email.com&quot;,
+            &quot;password&quot;: &quot;test&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;esbN2c3W2pdER83W&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Bruce Wayne&quot;,
+            &quot;email&quot;: &quot;test1765471883667@email.com&quot;,
+            &quot;password&quot;: &quot;batmobil123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;f9gsKm4vroGTbTuu&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Bruce Wayne&quot;,
+            &quot;email&quot;: &quot;test1765470903754@email.com&quot;,
+            &quot;password&quot;: &quot;batmobil123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;fNIHOavHYzoHziwX&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Bruce Wayne&quot;,
+            &quot;email&quot;: &quot;test1765470511087@email.com&quot;,
+            &quot;password&quot;: &quot;batmobil123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;gE8Ewrb1QZqWgA0K&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;api_1765471507006_leucm9&quot;,
+            &quot;email&quot;: &quot;1765471507006_43tb@teste.com&quot;,
+            &quot;password&quot;: &quot;vvh1dij4&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;glOwwZcOxR0hOdqK&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Bruce Wayne&quot;,
+            &quot;email&quot;: &quot;test1765471654548@email.com&quot;,
+            &quot;password&quot;: &quot;batmobil123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;i5Mjo7Q6JZ8VO9SN&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Atualizado_#(id)&quot;,
+            &quot;email&quot;: &quot;qa_61c3bcf5@teste.com&quot;,
+            &quot;password&quot;: &quot;1234&quot;,
+            &quot;administrador&quot;: &quot;false&quot;,
+            &quot;_id&quot;: &quot;iylm71DSHdkXAvEi&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;user_1765465657114_03kqzm&quot;,
+            &quot;email&quot;: &quot;1765465657114_zqd5@teste.com&quot;,
+            &quot;password&quot;: &quot;senha_1765465657114_8k9ok2&quot;,
+            &quot;administrador&quot;: &quot;false&quot;,
+            &quot;_id&quot;: &quot;jSz0d11kjkR5vCLC&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Bruce Wayne&quot;,
+            &quot;email&quot;: &quot;test1765471489042@email.com&quot;,
+            &quot;password&quot;: &quot;batmobil123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;kRQuFLE2GgHJV5pt&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Alex_24fed7&quot;,
+            &quot;email&quot;: &quot;qa_fcc63d45@teste.com&quot;,
+            &quot;password&quot;: &quot;1234&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;kajQCBjDaTw3cMlV&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Bruce Wayne&quot;,
+            &quot;email&quot;: &quot;test1765471568490@email.com&quot;,
+            &quot;password&quot;: &quot;batmobil123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;lMGiEjMhdhDe1kn6&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Bruce Wayne&quot;,
+            &quot;email&quot;: &quot;test1765471718294@email.com&quot;,
+            &quot;password&quot;: &quot;batmobil123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;la9wdrn8cgi2nh0z&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Bruce Wayne&quot;,
+            &quot;email&quot;: &quot;test1765469680581@email.com&quot;,
+            &quot;password&quot;: &quot;batmobil123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;luluomVxggPln79p&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;api_1765470050867_wx62hg&quot;,
+            &quot;email&quot;: &quot;1765470050867_635d@teste.com&quot;,
+            &quot;password&quot;: &quot;phwy174g&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;lzYXRauLXNhcwoom&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Bruce Wayne&quot;,
+            &quot;email&quot;: &quot;test1765471504194@email.com&quot;,
+            &quot;password&quot;: &quot;batmobil123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;mBeJJiABABMWmF8I&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Bruce Wayne&quot;,
+            &quot;email&quot;: &quot;test1765471670890@email.com&quot;,
+            &quot;password&quot;: &quot;batmobil123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;mI9gF3VLHuFhVveH&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Lucero_e29329&quot;,
+            &quot;email&quot;: &quot;qa_d6e2936a@teste.com&quot;,
+            &quot;password&quot;: &quot;1234&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;mM5YcyV1ucXOcmX3&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Bruce Wayne&quot;,
+            &quot;email&quot;: &quot;test1765471592832@email.com&quot;,
+            &quot;password&quot;: &quot;batmobil123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;mtEVadLw6xVOJh5s&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Bruce Wayne&quot;,
+            &quot;email&quot;: &quot;fixed1765471671099@email.com&quot;,
+            &quot;password&quot;: &quot;test&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;nSY3DRYYTVBypnLH&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Bruce Wayne&quot;,
+            &quot;email&quot;: &quot;test1765471687452@email.com&quot;,
+            &quot;password&quot;: &quot;batmobil123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;oXkdf8OBtoGW2jlw&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;user_1765471532228_lum1x9&quot;,
+            &quot;email&quot;: &quot;1765471532228_0xe8@teste.com&quot;,
+            &quot;password&quot;: &quot;ssxad5v6&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;oawpyWQi43YTyXH2&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Bruce Wayne&quot;,
+            &quot;email&quot;: &quot;test1765470516626@email.com&quot;,
+            &quot;password&quot;: &quot;batmobil123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;pDRZvjJS3LDX9Cgi&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Bruce Wayne&quot;,
+            &quot;email&quot;: &quot;test1765470507649@email.com&quot;,
+            &quot;password&quot;: &quot;batmobil123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;pbWjRok7hsPGzwB8&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Bruce Wayne&quot;,
+            &quot;email&quot;: &quot;fixed1765471676960@email.com&quot;,
+            &quot;password&quot;: &quot;test&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;pk12PN1chujCagHt&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Bruce Wayne&quot;,
+            &quot;email&quot;: &quot;test1765471872748@email.com&quot;,
+            &quot;password&quot;: &quot;batmobil123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;puFguo7dZJaOkh3m&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Usuário woj38qm&quot;,
+            &quot;email&quot;: &quot;user_1765465782837@teste.com&quot;,
+            &quot;password&quot;: &quot;Test1234&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;q8VyDPLOm7Ko5kaC&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;user_1765470987546_gzmcgd&quot;,
+            &quot;email&quot;: &quot;1765470987546_6ynz@teste.com&quot;,
+            &quot;password&quot;: &quot;69od5of3&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;qWdbRqgGWqdpvNyo&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Charles Fowler&quot;,
+            &quot;email&quot;: &quot;janicehughes@example.net&quot;,
+            &quot;password&quot;: &quot;v4kBa1Qt^Y&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;qbiE9svaMKIKOAnj&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Bruce Wayne&quot;,
+            &quot;email&quot;: &quot;test1765471676777@email.com&quot;,
+            &quot;password&quot;: &quot;batmobil123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;sF1lVVdsgpLxIDoD&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Bruce Wayne&quot;,
+            &quot;email&quot;: &quot;fixed1765471702484@email.com&quot;,
+            &quot;password&quot;: &quot;test&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;sP5qINKr06Pgn9zH&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Bruce Wayne&quot;,
+            &quot;email&quot;: &quot;fixed1765471882805@email.com&quot;,
+            &quot;password&quot;: &quot;test&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;sidaFFxRdG4BXkuD&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Leo_8dcfd8&quot;,
+            &quot;email&quot;: &quot;qa_95872afb@teste.com&quot;,
+            &quot;password&quot;: &quot;1234&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;tJc4SwDEKHXedlYh&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Lucero_eacb6d&quot;,
+            &quot;email&quot;: &quot;qa_91c0db64@teste.com&quot;,
+            &quot;password&quot;: &quot;1234&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;tQiIZp63C5ZkAC7j&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Vale_c6d0b6&quot;,
+            &quot;email&quot;: &quot;qa_c6583117@teste.com&quot;,
+            &quot;password&quot;: &quot;1234&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;ug3mun0RL7XxXNPp&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Bruce Wayne&quot;,
+            &quot;email&quot;: &quot;test1765471392282@email.com&quot;,
+            &quot;password&quot;: &quot;batmobil123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;uw9v5cPBJDxoKnGP&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;user_1765471722082_f4v9wj&quot;,
+            &quot;email&quot;: &quot;1765471722082_38gw@teste.com&quot;,
+            &quot;password&quot;: &quot;9317a48j&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;vpkvkgqQsC4xnxBm&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Bruce Wayne&quot;,
+            &quot;email&quot;: &quot;fixed1765471687651@email.com&quot;,
+            &quot;password&quot;: &quot;test&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;vycLGZxqwq0MCJgg&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Usuário 6jmph&quot;,
+            &quot;email&quot;: &quot;user_1765467167577@teste.com&quot;,
+            &quot;password&quot;: &quot;Test1234&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;wASKS5tNPrSYqDQs&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Bruce Wayne&quot;,
+            &quot;email&quot;: &quot;test1765469874628@email.com&quot;,
+            &quot;password&quot;: &quot;batmobil123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;wEPtHKHQ1SRfrdI9&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Bruce Wayne&quot;,
+            &quot;email&quot;: &quot;test1765471615898@email.com&quot;,
+            &quot;password&quot;: &quot;batmobil123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;wFo2ns1YdscSctaQ&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;user_1765471006147_n3k396&quot;,
+            &quot;email&quot;: &quot;1765471006147_ousu@teste.com&quot;,
+            &quot;password&quot;: &quot;effmre4j&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;wMZMqiETebdMiggX&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Bruce Wayne&quot;,
+            &quot;email&quot;: &quot;test1765471656528@email.com&quot;,
+            &quot;password&quot;: &quot;batmobil123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;wozzNKzIpfAp5UVC&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;user_1765465357826_f1qk14&quot;,
+            &quot;email&quot;: &quot;1765465357826_wooy@teste.com&quot;,
+            &quot;password&quot;: &quot;senha_1765465357826_kzmgxn&quot;,
+            &quot;administrador&quot;: &quot;false&quot;,
+            &quot;_id&quot;: &quot;wzCRlmd1pFeO78GB&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Bruce Wayne&quot;,
+            &quot;email&quot;: &quot;test1765471742209@email.com&quot;,
+            &quot;password&quot;: &quot;batmobil123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;wzpMqy7LPgsGCftP&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Leo_7e46c8&quot;,
+            &quot;email&quot;: &quot;qa_36beceaa@teste.com&quot;,
+            &quot;password&quot;: &quot;1234&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;yAUGeNkVBmjUVSrt&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Usuário pog5de&quot;,
+            &quot;email&quot;: &quot;user_1765466504838@teste.com&quot;,
+            &quot;password&quot;: &quot;Test1234&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;yMFVrFSGDsWDDn6w&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Bruce Wayne&quot;,
+            &quot;email&quot;: &quot;test1765469953718@email.com&quot;,
+            &quot;password&quot;: &quot;batmobil123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;zc1dmC4hi5HZQz48&quot;
+        }
+    ]
+}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response == read(&#39;classpath:schemas/userListSchema.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">38</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:15]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:15]</span>
+                <span class="scenario-name">Consultar usuario con ID inválido devuelve 400</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>468</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:15]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:15]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://serverest.dev&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:15]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def usersPath = &#39;/usuarios&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:15]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>headers { &#39;Content-Type&#39;: &#39;application/json&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:15]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def Java = Java.type(&#39;com.serverest.helpers.DataGenerator&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path usersPath, &#39;1234567&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">460</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.17">11:57:44.758 request:
+1 &gt; GET https://serverest.dev/usuarios/1234567
+1 &gt; Content-Type: application/json
+1 &gt; Host: serverest.dev
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+11:57:45.215 response time in milliseconds: 455
+1 &lt; 400
+1 &lt; access-control-allow-origin: *
+1 &lt; x-dns-prefetch-control: off
+1 &lt; x-frame-options: SAMEORIGIN
+1 &lt; strict-transport-security: max-age=15552000; includeSubDomains
+1 &lt; x-download-options: noopen
+1 &lt; x-content-type-options: nosniff
+1 &lt; x-xss-protection: 1; mode=block
+1 &lt; content-type: application/json; charset=utf-8
+1 &lt; x-cloud-trace-context: 36637681d4d52e5b200f958f53a8f287
+1 &lt; date: Thu, 11 Dec 2025 16:57:46 GMT
+1 &lt; server: Google Frontend
+1 &lt; Content-Length: 67
+{
+    &quot;id&quot;: &quot;id deve ter exatamente 16 caracteres alfanuméricos&quot;
+}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 400</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.id == &#39;id deve ter exatamente 16 caracteres alfanuméricos&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

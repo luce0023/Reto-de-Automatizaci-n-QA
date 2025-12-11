@@ -1,0 +1,8 @@
+com\saucedemo\pages\CheckoutPage.class
+com\saucedemo\steps\LoginSteps.class
+com\saucedemo\pages\LoginPage.class
+com\saucedemo\runners\RunCucumberTest.class
+com\saucedemo\steps\ProductSteps.class
+com\saucedemo\pages\InventoryPage.class
+com\saucedemo\pages\CartPage.class
+com\saucedemo\steps\PlaywrightContext.class
