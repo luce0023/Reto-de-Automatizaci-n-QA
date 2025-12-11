@@ -17,11 +17,11 @@
    ```bash
    git clone https://github.com/tuusuario/RetoBackEndApiServerest.git
    ```
-2. Entrar al proyecto:
+ Entrar al proyecto:
    ```bash
    cd RetoBackEndApiServerest
    ```
-3. Instalar dependencias:
+ Instalar dependencias:
    ```bash
    mvn clean install
    ```
@@ -68,3 +68,4 @@ src/test/resources/features/users/
 Así quien lea tu repo verá claramente dónde están las instrucciones prácticas y dónde está tu explicación técnica.  
 
 👉 ¿Quieres que te lo prepare ya con tu nombre y reto personalizado para que lo copies directo en GitHub?
+
