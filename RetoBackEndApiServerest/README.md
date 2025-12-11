@@ -63,9 +63,3 @@ src/test/resources/features/users/
 - **Separación de features**: cada endpoint en su propio archivo `.feature` para claridad y mantenibilidad.
 ```
 
----
-
-Así quien lea tu repo verá claramente dónde están las instrucciones prácticas y dónde está tu explicación técnica.  
-
-👉 ¿Quieres que te lo prepare ya con tu nombre y reto personalizado para que lo copies directo en GitHub?
-
