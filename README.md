@@ -1,7 +1,7 @@
 
 
 ```markdown
-# Reto de Automatización QA
+# Reto de Automatización QA de Lucero Huaroto 
 
 Este repositorio contiene dos proyectos independientes de automatización:
 
